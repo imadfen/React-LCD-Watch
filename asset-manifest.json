@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-LCD-Watch/static/css/main.f685ad65.css",
+    "main.js": "/React-LCD-Watch/static/js/main.d5e73e14.js",
+    "index.html": "/React-LCD-Watch/index.html",
+    "main.f685ad65.css.map": "/React-LCD-Watch/static/css/main.f685ad65.css.map",
+    "main.d5e73e14.js.map": "/React-LCD-Watch/static/js/main.d5e73e14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f685ad65.css",
+    "static/js/main.d5e73e14.js"
+  ]
+}
