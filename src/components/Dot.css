@@ -1,0 +1,37 @@
+.double-dots{
+    margin: 0 30px;
+    align-self: end;
+}
+
+.dot{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+
+.dot-midle{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+
+}
+
+.dot-triangle1 {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid green;
+    border-top: 10px solid transparent;
+}
+
+.dot-triangle2 {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 10px solid green;
+}

@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+import HoursMinutes from './components/HoursMinutes';
+import AMPM from './components/AMPM';
+import Seconds from './components/Seconds';
+import TheDate from './components/TheDate';
 import './App.css';
 
 function App() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HoursMinutes/>
+      <AMPM/>
+      <Seconds/>
+      <TheDate/>
     </div>
   );
 }

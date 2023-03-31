@@ -1,0 +1,217 @@
+.bitContainer{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 30px 110px 30px;
+    grid-template-rows: 110px 20px 110px;
+}
+
+.segment{
+    margin: 0;
+    padding: 0;
+}
+
+.hor-segment{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.hor-midle{
+    background-color: green;
+    width: 90px;
+    height: 20px;
+
+}
+
+.hor-triangle1 {
+    height: 0;
+    width: 0;
+    border-left: 0px solid transparent;
+    border-right: 10px solid green;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.hor-triangle2 {
+    height: 0;
+    width: 0;
+    border-left: 10px solid green;
+    border-right: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+
+.ver-segment{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.ver-midle{
+    background-color: green;
+    width: 20px;
+    height: 90px;
+
+}
+
+.ver-triangle1 {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid green;
+    border-top: 0px solid transparent;
+}
+
+.ver-triangle2 {
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 10px solid green;
+}
+
+
+/* ############### short segment: ############### */
+
+.AMPM .bitContainer, .SS .bitContainer{
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    justify-items: right;
+    grid-template-columns: 15px auto 15px;
+    grid-template-rows: 50px 9px 50px;
+}
+
+
+
+.short-seg .hor-midle{
+    background-color: green;
+    width: 45px;
+    height: 10px;
+}
+
+.short-seg .ver-midle{
+    background-color: green;
+    width: 10px;
+    height: 35px;
+}
+
+.short-seg .hor-triangle1 {
+    height: 0;
+    width: 0;
+    border-left: 0px solid transparent;
+    border-right: 5px solid green;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+}
+
+.short-seg .hor-triangle2 {
+    height: 0;
+    width: 0;
+    border-left: 5px solid green;
+    border-right: 0px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+}
+
+
+.short-seg .ver-triangle1 {
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid green;
+    border-top: 0px solid transparent;
+}
+
+.short-seg .ver-triangle2 {
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 5px solid green;
+}
+
+.a-1 .hor-midle, .a-2 .hor-midle {
+    width: 10px;
+}
+
+
+
+
+/* ################# segments: #################### */
+
+.a{
+    grid-row: 1;
+    grid-column: 2;
+}
+.a-1{
+    grid-row: 1;
+    grid-column: 2;
+}
+.a-2{
+    grid-row: 1;
+    grid-column: 4;
+}
+.b{
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: start;
+}
+.short-seg.b.m{
+    grid-row: 1;
+    grid-column: 5;
+    justify-self: start;
+}
+.b-1{
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: center;
+}
+.c{
+    grid-row: 2;
+    grid-column: 3;
+    margin-top: 10px;
+    justify-self: start;
+}
+.short-seg.c{
+    margin-top: 5px;
+}
+.short-seg.c.m{
+    grid-row: 2;
+    grid-column: 5;
+    margin-top: 5px;
+    justify-self: start;
+}
+.d{
+    grid-row: 3;
+    grid-column: 2;
+    align-self: end;
+}
+.e{
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 10px;
+    justify-self: end;
+}
+.short-seg.e{
+    margin-top: 5px;
+}
+.f{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+}
+.g{
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+}
